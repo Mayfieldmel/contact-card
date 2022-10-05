@@ -1,5 +1,11 @@
+// Import modules
 import "./form.js";
 import "./submit.js";
+// Import CSS files
+import "../css/index.css";
+import { Tooltip, Toast, Popover } from 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Import image files
 import Logo from '../images/logo.png';
 import Bear from '../images/bear.png';
 import Dog from '../images/dog.png';
