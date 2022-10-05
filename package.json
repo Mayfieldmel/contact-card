@@ -81,5 +81,9 @@
   "bugs": {
     "url": "https://github.com/Mayfieldmel/contact-card/issues"
   },
-  "homepage": "https://github.com/Mayfieldmel/contact-card#readme"
+  "homepage": "https://github.com/Mayfieldmel/contact-card#readme",
+  "engines": {
+    "node": "17.x"
+  },
+  "heroku-prebuild": "npm install --dev"
 }
