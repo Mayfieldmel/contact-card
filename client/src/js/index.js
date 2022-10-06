@@ -106,3 +106,23 @@ if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
     navigator.serviceWorker.register('./service-worker.js');
   })};
+
+//   capture install button
+  const installBtn = document.getElementById('installBtn');
+
+//   checks beforeinstallprompt and sets the visibility of the button to “visible”:
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    installBtn.style.visibility = 'visible';
+
+    installBtn.addEventListener('click', () => {
+        event.prompt();
+        installBtn.setAttribute('disabled', true);
+        installBtn.textContent = 'Installed!';
+        });
+    });
+
+    // check whether or not the app has been installed
+    window.addEventListener('appinstalled', (event) => {
+        console.log('👍', 'appinstalled', event);
+      });
