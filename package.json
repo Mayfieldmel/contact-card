@@ -84,6 +84,5 @@
   "homepage": "https://github.com/Mayfieldmel/contact-card#readme",
   "engines": {
     "node": "17.x"
-  },
-  "heroku-prebuild": "npm install --dev"
+  }
 }
